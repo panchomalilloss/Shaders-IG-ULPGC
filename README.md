@@ -84,32 +84,32 @@ No utiliza texturas externas: todo el efecto se logra a través de coordenadas p
 
 ## 🧩 Funcionamiento General
 
-### ✅ 1. Normalización de Coordenadas
+### 1. Normalización de Coordenadas
 Convierte `gl_FragCoord` en coordenadas UV centradas para un comportamiento estable en cualquier resolución.
 
-### ✅ 2. Espacio 3D Simbólico
+### 2. Espacio 3D Simbólico
 Se construye un vector 3D:
 - `x` y `y`: coordenadas 2D normalizadas.
 - `z = 1.0`: profundidad simbólica del túnel.
 
-### ✅ 3. Rotación Animada
+### 3. Rotación Animada
 El shader rota el plano XY con una matriz de rotación dependiente del tiempo, generando el efecto giratorio.
 
-### ✅ 4. Conversión a Coordenadas Polares
+### 4. Conversión a Coordenadas Polares
 Se obtiene:
 - `r` → distancia al centro (radio).
 - `ang` → ángulo polar.
 
-### ✅ 5. Distorsión de Ángulo
+### 5. Distorsión de Ángulo
 Se añade distorsión dinámica:
 - Dependiendo del radio `r`.
 - Oscilación temporal.
 - Multiplicadores para generar múltiples brazos (efecto tipo “vórtice”).
 
-### ✅ 6. Anillos Animados (Túnel)
+### 6. Anillos Animados (Túnel)
 Se aplican movimientos cíclicos mediante `mod()` para simular anillos moviéndose hacia la cámara.
 
-### ✅ 7. Contraste y Color
+### 7. Contraste y Color
 - `smoothstep()` define las líneas del túnel.
 - El color varía en tonos púrpura y magenta animados.
 
