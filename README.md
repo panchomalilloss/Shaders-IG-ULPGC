@@ -72,6 +72,7 @@ Fog exponencial para profundidad y atmósfera.
 uniform vec2 u_resolution;
 uniform vec2 u_mouse;
 uniform float u_time;
+```
 
 # 🔮 Shader GLSL — Túnel Espiral Procedural (GLSL Fragment Shader)
 
