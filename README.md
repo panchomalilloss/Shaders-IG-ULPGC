@@ -2,7 +2,7 @@
 
 # 🧵 Shader GLSL — Raymarching + POM + Iluminación
 
-## 📌 Descripción
+## 📌 Descripción Shader1
 Este proyecto contiene un **fragment shader GLSL** que renderiza una escena 3D mediante **raymarching**, combinando:
 - Geometría SDF (esfera + plano).
 - Iluminación dinámica con sombras.
